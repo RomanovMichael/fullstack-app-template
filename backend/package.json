@@ -1,5 +1,5 @@
 {
-    "name": "backend",
+    "name": "@fullstack/backend",
     "private": "true",
     "version": "0.0.0",
     "scripts": {
@@ -10,9 +10,11 @@
     },
     "dependencies": {
         "@trpc/server": "^11.4.3",
+        "cors": "^2.8.5",
         "express": "^5.1.0"
     },
     "devDependencies": {
+        "@types/cors": "^2.8.19",
         "@types/express": "^5.0.3",
         "@types/node": "^24.1.0",
         "prettier": "^3.6.2",
