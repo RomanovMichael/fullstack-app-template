@@ -1,0 +1,1 @@
+'*.{ts,tsx, json, yml, yaml}': 'prettier --loglevel warn --cache --write'
