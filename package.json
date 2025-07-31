@@ -10,6 +10,15 @@
         "prettify": "pnpm -r --parallel prettify",
         "prepare": "husky install"
     },
+    "lint-staged": {
+        "*.{ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{js,jsx,json,md}": [
+            "prettier --write"
+        ]
+    },
     "devDependencies": {
         "concurrently": "^9.2.0",
         "husky": "^9.1.7",
