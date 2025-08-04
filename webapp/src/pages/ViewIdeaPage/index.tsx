@@ -1,5 +1,6 @@
 import { trpc } from '../../lib/trpc'
 import { useParams } from 'react-router-dom'
+import { Segment } from '../../components/Segment'
 
 export const ViewIdeaPage = () => {
   const { ideaNick } = useParams() as { ideaNick: string }
@@ -13,10 +14,8 @@ export const ViewIdeaPage = () => {
   }
 
   return (
-    <div>
-      <h1>{data.idea.name}</h1>
-      <p>{data.idea.description}</p>
-      <p dangerouslySetInnerHTML={{ __html: data.idea.text }} />
-    </div>
+    <Segment title={data.idea.name} size={2} description={data.idea.description}>
+      <div dangerouslySetInnerHTML={{ __html: data.idea.text }} />
+    </Segment>
   )
 }
