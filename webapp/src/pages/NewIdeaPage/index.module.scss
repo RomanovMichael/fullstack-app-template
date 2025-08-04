@@ -1,0 +1,14 @@
+@import '../../styles/_vars';
+@import '../../styles/_mixins';
+
+.title {
+    @include h1;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .input {}
+}
